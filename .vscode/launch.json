@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug FastAPI",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "app.main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "5008",
+        "--reload"
+      ],
+      "cwd": "${workspaceFolder}",
+      "jinja": true,
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
